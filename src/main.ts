@@ -7,7 +7,7 @@ async function bootstrap() {
   app.enableCors()
   app.use(express.static("."))
 
-  const config = new DocumentBuilder().setTitle("Đây là swagger").addBearerAuth().build();
+  const config = new DocumentBuilder().setTitle("db_fiverr").addBearerAuth().build();
 
   const document = SwaggerModule.createDocument(app, config);
 
